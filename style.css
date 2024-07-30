@@ -1,0 +1,334 @@
+@font-face{
+  font-family: YoungSerif;
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("ttf");
+}
+
+@font-face{
+  font-family: outfit;
+  src: url("assets/fonts/outfit/static/Outfit-Regular.ttf") format("ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*so this code right here is going to make the font-size 10 px.*/
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  background-color: #F3E5D8;
+}
+
+.container{
+  max-width: 110rem;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  max-width: 70rem;
+  height: 165rem;
+  flex: 1;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  border-radius: 2.5rem;
+  background-color: #FFFFFF;
+}
+
+.img-holder{
+  max-width: 60rem;
+  height: 24rem;
+  border-radius: 1rem;
+  margin: 3rem 3rem 0rem 5.5rem;
+}
+
+.ommelete__img{
+  width: 100%;
+  height: 100%;
+  filter: saturate(110%);
+  border-radius: 1rem;
+}
+
+.card-heading{
+  font-family: "YoungSerif";
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 2.5rem 3rem 0rem 5.5rem;
+  color: #333130;
+}
+
+.card-description__holder{
+  max-width: 60rem;
+}
+
+.card-description{
+  font-family: outfit;
+  font-size: 1.4rem;
+  margin: 1rem 3rem 0rem 5.5rem;
+  color: #4e4e53;
+}
+
+.preparation-time__box{
+  max-width: 60rem;
+  height: 20rem;
+  background-color: #FFF7FC;
+  font-family: outfit;
+  margin: 1.5rem 3rem 0rem 5.5rem ;
+  border-radius: 1rem;
+}
+.p-t__heading{
+  color: #7A2B49;
+  font-size: 1.6rem;
+  padding: 2rem 0rem 1rem 1rem
+}
+
+.p-t__item{
+  color: #645B58;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem 2rem 5.5rem;
+  list-style-type: none;
+}
+.p-t__item::before{
+  content: "";
+  display: block;
+  position: relative;
+  top: 1.3rem;
+  left: -3.9rem;
+  width: 0.5rem;
+  height: 1rem;
+  border-radius: 200rem;
+  background-color: rgb(150, 12, 158);
+}
+.ingridents-box{
+  max-width: 60rem;
+  height: 23rem;
+  margin: 3rem 1rem 0rem 5.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.ingridients-header{
+  font-family: "YoungSerif";
+  color: #764130;
+  font-weight: 400;
+}
+
+.ingridients{
+  font-family: "outfit";
+  font-size:1.4rem;
+  list-style-type: none;
+  color: #727272;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+
+}
+
+.ingridients::before{
+  content: "";
+  display: block;
+  position: relative;
+  top: 1.3rem;
+  left: -1.9rem;
+  width: 1rem;
+  height: 0.5rem;
+  border-radius: 200rem;
+  background-color: rgb(148, 100, 15);
+}
+.instructions-box{
+  max-width: 60rem;
+  height: 45rem;
+  margin: 4rem 0rem 3rem 5.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+
+.instructions-header{
+  color: #864939;
+  font-family: "youngserif";
+  font-weight: 400;
+}
+
+.instruction-steps{
+  font-family: outfit;
+  padding: 2rem 0rem 0rem 2rem;
+}
+
+ol { 
+  list-style: none; 
+  counter-reset: num; 
+} 
+
+ol li { 
+  counter-increment: num; 
+} 
+
+ol li::before { 
+  content: counter(num) ". "; 
+  color: brown;
+  font-family: "YoungSerif"; 
+  font-size: 1.8rem;
+}
+
+.Nutrition-holder{
+  max-width: 60rem;
+  height: 20rem;
+  margin: 3rem 0rem 3rem 5.5rem;
+}
+
+.Nutrition-header{
+  color: #864939;
+  font-family: YoungSerif;
+  font-size: 2.4rem;
+  margin-left: 1.5rem;
+}
+
+.Nutrition-description{
+  color: #727272;
+  font-family: outfit;
+  margin-left: 1.5rem;
+}
+
+.Nutrition-table{
+  max-width: 60rem;
+  margin-top: 1rem;
+}
+
+th, td{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-text{
+  font-family: outfit;
+  font-size: 1.4rem;
+  color: #727272;
+  padding: 1rem 25rem 1rem 3rem;
+}
+
+.table-num{
+  font-family: outfit;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #764130;
+  padding: 1rem 25rem 1rem 0rem;
+}
+
+
+@media  screen and (max-width: 375px) {
+
+  html, body{
+    overflow-x: hidden;
+  }
+
+  .container{
+    max-width: 37.5rem;
+  }
+
+  .card {
+      max-width: 100%;
+      border-radius: 0px;
+      height: 200rem;
+      margin: 0 0;
+  }
+
+  .img-holder{
+    border-radius: 0px;
+    margin: 0px 0px;
+  }
+
+.ommelete__img{
+  filter: saturate(120%);
+} 
+
+.card-heading{
+  font-size: 3.6rem;
+  margin: 3rem -0.5rem 0rem 4rem;
+}
+
+.card-description{
+  font-size: 1.8rem;
+  margin: 2rem 3rem 3rem 4rem;
+}
+
+.preparation-time__box{
+  margin: 3rem 3rem 2rem 4rem;
+}
+
+.p-t__item{
+  padding: 0rem 0rem 1rem 5rem;
+  font-size: 1.6rem;
+}
+
+.p-t__heading{
+  font-size: 1.8rem;
+}
+
+.p-t__item::before{
+  content: "";
+  display: block;
+  position: relative;
+  top: 1.3rem;
+  left: -3.9rem;
+  width: 0.5rem;
+  height: 1rem;
+  border-radius: 200rem;
+  background-color: rgb(150, 12, 158);
+}
+
+
+.ingridents-box{
+  margin: 1rem 3rem 2rem 4rem;
+}
+
+.ingridients-header{
+  font-size: 2.4rem;
+}
+.ingridients{
+  font-size: 1.4rem;
+  color: rgb(75, 76, 103);
+}
+
+.instructions-box{
+  margin: 2rem 3rem 0rem 4rem;
+  height: 70rem;
+}
+
+.instruction-steps{
+  padding: 1rem 3rem 1rem 2rem;
+}
+
+.Nutrition-header{
+  margin-left: 0rem;
+}
+
+.Nutrition-description{
+  margin-left: 0rem;
+}
+
+.Nutrition-holder{
+  max-width: 31rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.Nutrition-table{
+  max-width: 10rem;
+  margin: 1rem 1rem 1rem -4rem;
+}
+
+.table-text{
+  padding: 1rem 8rem 1rem 8rem ;
+}
+
+.table-num{
+  padding: 1rem 8rem 1rem 0rem;
+}
+
+
+
+}
