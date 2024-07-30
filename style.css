@@ -1,11 +1,11 @@
 @font-face{
   font-family: YoungSerif;
-  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("ttf");
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format("ttf");
 }
 
 @font-face{
   font-family: outfit;
-  src: url("assets/fonts/outfit/static/Outfit-Regular.ttf") format("ttf");
+  src: url(assets/fonts/outfit/static/Outfit-Regular.ttf) format("ttf");
 }
 
 *,
